@@ -7,6 +7,10 @@
     --tint-dark: #707070;
 }
 
+* {
+    box-sizing: border-box;
+    font-family: Jost;
+}
 
 body {
     margin: 0;
