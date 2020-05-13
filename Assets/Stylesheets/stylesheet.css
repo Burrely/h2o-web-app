@@ -52,8 +52,9 @@ main > * {
     background-color: var(--tint);
 }
 
-.sidebar > nav {
+.sidebar > * {
     border-radius: 10px;
+    margin-bottom: 4px;
     padding: 0 10px;
     background-color: var(--background);
 }
