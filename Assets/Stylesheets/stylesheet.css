@@ -59,8 +59,21 @@ main > * {
     background-color: var(--background);
 }
 
+.sidebar > nav img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: var(--tint-dark);
+}
+
+.sidebar > nav img.active {
+    background-color: var(--primary-color);
+}
+
 .sidebar > nav > * {
-    display: block;
+    display: flex;
+    align-items: center;
     margin: 0;
     padding: 10px 0;
     border-bottom: 1px solid var(--tint);
