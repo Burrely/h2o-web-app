@@ -65,3 +65,7 @@ main > * {
     padding: 10px 0;
     border-bottom: 1px solid var(--tint);
 }
+
+.sidebar > nav > *:last-child {
+    border-bottom: none;
+}
