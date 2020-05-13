@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #fbac18;
+    --primary-color-dark: #f58118;
+    --secondary-color: #50C5D2;
+    --secondary-color-dark: #048a96;
+    --tint: #eeeeee;
+    --tint-dark: #707070;
+}
+
+
 body {
     margin: 0;
 }
