@@ -1,3 +1,5 @@
+/* Main styling */
+
 :root {
     --primary-color: #fbac18;
     --primary-color-dark: #f58118;
@@ -5,6 +7,7 @@
     --secondary-color-dark: #048a96;
     --tint: #eeeeee;
     --tint-dark: #707070;
+    --background: white;
 }
 
 * {
@@ -16,16 +19,18 @@ body {
     margin: 0;
 }
 
+/* General styling */
+
 .active {
-    color: red;
+    color: var(--primary-color);
 }
 
-.sidebar {
-    position: absolute;
-    width: 200px;
-    height: 100vh;
-    background-color: lightgray;
+a {
+    color: var(--tint-dark);
+    text-decoration: none;
 }
+
+/* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
     margin-left: 200px;
@@ -35,4 +40,66 @@ main {
 
 main > * {
     display: inline-block;
+}
+
+/* Sidebar */
+
+.sidebar {
+    position: absolute;
+    width: 260px;
+    height: 100vh;
+    padding: 10px;
+    background-color: var(--tint);
+}
+
+.sidebar > * {
+    border-radius: 10px;
+    margin-bottom: 4px;
+    padding: 0 10px;
+    background-color: var(--background);
+}
+
+.sidebar > .logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar > .logoContainer > img {
+    margin-right: 10px;
+}
+
+.sidebar > .logoContainer > div > * {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+    color: var(--tint-dark);
+}
+
+.sidebar > .logoContainer > div > span:nth-child(1) {
+    margin-bottom: -6px;
+    color: var(--secondary-color-dark);
+}
+
+.sidebar > nav img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 20px;
+    background-color: var(--tint-dark);
+}
+
+.sidebar > nav img.active {
+    background-color: var(--primary-color);
+}
+
+.sidebar > nav > * {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--tint);
+}
+
+.sidebar > nav > *:last-child {
+    border-bottom: none;
 }
