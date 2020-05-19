@@ -116,3 +116,22 @@ main > * {
 .sidebar > nav > *:last-child {
     border-bottom: none;
 }
+.notifications *{
+    background-color: #eeeeee;
+    color: red;
+   width: 1400px;
+   margin-top: 20px;
+   text-align: left;
+   border-radius: 10%;
+   display: inline-block;
+}
+.notificationImage{
+    width: 70px;
+    height: 70px;
+}
+.content{
+    padding-left: 20px;
+}
+.notificationText{
+    width: 400px;
+}
