@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+.primary-color {
+    color: var(--primary-color) !important ;
+}
+
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
@@ -198,17 +202,24 @@ main > * {
             flex-grow: 3;
         }
 
-        main section.miniOverview > .prestaties > h5 {
+        main section.miniOverview > * > h5 {
             margin-bottom: 20px;
         }
 
-            main section.miniOverview > .prestaties > .prestatieContainer {
+            main section.miniOverview > * > .shortList {
                 display: flex;
                 flex-direction: row;
                 align-items: baseline;
             }
 
-            main section.miniOverview > .prestaties > .prestatieContainer > * {
+            main section.miniOverview > * > .shortList h1 {
+                display: block;
+                margin-right: 10px;
+                line-height: 0;
+                font-size: 36pt;
+            }
+
+            main section.miniOverview > * > .shortList > * {
                 display: flex;
                 align-items: center;
                 width: 50%;
@@ -216,14 +227,14 @@ main > * {
                 color: var(--secondary-color-dark);
             }
 
-            main section.miniOverview > .prestaties > .prestatieContainer > * > img {
+            main section.miniOverview > * > .shortList > * > img {
                 width: 64px;
                 height: 64px;
                 margin-right: 10px;
                 background-color: grey;
             }
 
-            main section.miniOverview > .prestaties > .prestatieContainer > * * {
+            main section.miniOverview > * > .shortList > * * {
                 margin: 0;
             }
 
