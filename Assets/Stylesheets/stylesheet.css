@@ -33,13 +33,37 @@ a {
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
-    margin-left: 200px;
-    overflow: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 260px;
+    padding: 20px 80px;
 }
 
 main > * {
-    display: inline-block;
+    width: 1400px;
+    margin-bottom: 40px;
+}
+
+/* Chart section */
+
+.chart {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: auto;
+}
+
+.chart > img {
+    width: 100%;
+    max-height: 45vh;
+}
+
+.chart > h1 {
+    font-size: 18.72px;
+    padding: 10px 20px;
+    color: var(--primary-color-dark);
+    margin: 0;
 }
 
 /* Sidebar */
@@ -116,3 +140,75 @@ main > * {
 .sidebar > nav > *:last-child {
     border-bottom: none;
 }
+.notifications *{
+    background-color: #eeeeee;
+    color: red;
+   width: 1400px;
+   text-align: left;
+   border-radius: 10px;
+   display: inline-block;
+}
+.notificationImage{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.content{
+    padding-left: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.notificationText{
+    width: 800px;
+}
+
+/* PAGES */
+
+/* Overzicht */
+main section.miniOverview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+main section.miniOverview > * {
+    height: 200px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--primary-color-dark);
+}
+
+main section.miniOverview section > * {
+    margin: 0;
+}
+
+main section.miniOverview > *:last-child {
+    margin-right: 0;
+}
+
+main section.miniOverview > * > h1 {
+    margin-bottom: -4px;
+}
+
+main section.miniOverview > .prestaties {
+    flex-grow: 3;
+}
+
+main section.miniOverview > .voortgang {
+    flex-grow: 1;
+}
+
+main section.miniOverview > .huidigVerbruik {
+    flex-grow: 2;
+}
+.buttonImage{
+    height: 50px;
+    width: 50px;
+}
+/*.buttonSectie *{
+    
+} */
+/* 6 */
