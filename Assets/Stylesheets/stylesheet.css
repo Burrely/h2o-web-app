@@ -116,3 +116,96 @@ main > * {
 .sidebar > nav > *:last-child {
     border-bottom: none;
 }
+.notifications *{
+    background-color: #eeeeee;
+    color: red;
+   width: 1400px;
+   text-align: left;
+   border-radius: 10px;
+   display: inline-block;
+}
+.notificationImage{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.content{
+    padding-left: 20px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.notificationText{
+    width: 800px;
+}
+
+/* PAGES */
+
+/* Overzicht */
+main section.miniOverview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+main section.miniOverview > * {
+    height: 200px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--primary-color-dark);
+}
+
+main section.miniOverview section > * {
+    margin: 0;
+}
+
+main section.miniOverview > *:last-child {
+    margin-right: 0;
+}
+
+main section.miniOverview > * > h1 {
+    margin-bottom: -4px;
+}
+
+main section.miniOverview > .prestaties {
+    flex-grow: 3;
+}
+
+main section.miniOverview > .voortgang {
+    flex-grow: 1;
+}
+
+main section.miniOverview > .huidigVerbruik {
+    flex-grow: 2;
+}
+/* 6 */
+
+/* Progress */
+
+.boomOverzicht {
+    display: inline-block;
+}
+
+.boom {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: 65vh;
+    width: 30vw;
+}
+
+.boomOverzicht > * > h1 {
+    color: var(--secondary-color-dark);
+    padding: 10px 20px;
+    font-size: 18.72px;
+    margin: 0;
+}
+
+.boom > img {
+    height: 90%;
+}
+
+.weekOverzicht {
+    margin-left: 30vw;
+}
