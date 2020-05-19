@@ -139,3 +139,46 @@ main > * {
 .notificationText{
     width: 400px;
 }
+
+/* PAGES */
+
+/* Overzicht */
+main section.miniOverview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+main section.miniOverview > * {
+    height: 200px;
+    margin-right: 10px;
+    padding: 10px 20px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    color: var(--primary-color-dark);
+}
+
+main section.miniOverview section > * {
+    margin: 0;
+}
+
+main section.miniOverview > *:last-child {
+    margin-right: 0;
+}
+
+main section.miniOverview > * > h1 {
+    margin-bottom: -4px;
+}
+
+main section.miniOverview > .prestaties {
+    flex-grow: 3;
+}
+
+main section.miniOverview > .voortgang {
+    flex-grow: 1;
+}
+
+main section.miniOverview > .huidigVerbruik {
+    flex-grow: 2;
+}
+/* 6 */
