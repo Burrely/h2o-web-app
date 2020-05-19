@@ -207,15 +207,20 @@ main section.miniOverview > .huidigVerbruik {
 .buttonImage{
     height: 50px;
     width: 50px;
+    border-color: #50C5D2;
+    border-radius: 50%;
 }
-/*.buttonSectie *{
-    
-} */
-/* 6 */
-/* 6 */
-
-/* Progress */
-
+.buttonSectie h3{
+    color: #50C5D2;
+    margin-left: 5px;
+} 
+.buttonSectie h5{
+    color: #f58118;
+    margin-left: 5px;
+}
+.buttonSectie *{
+    display: inline-block;
+}
 .boomOverzicht {
     display: inline-block;
 }
