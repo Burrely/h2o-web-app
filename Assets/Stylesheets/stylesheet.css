@@ -231,3 +231,27 @@ main > * {
             flex-grow: 2;
         }
     /* 6 */
+
+/* Progress */
+
+.boomOverzicht {
+    display: inline-block;
+}
+
+.boom {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: 65vh;
+    width: 30vw;
+}
+
+.boomOverzicht > * > h1 {
+    color: var(--secondary-color-dark);
+    padding: 10px 20px;
+    font-size: 18.72px;
+    margin: 0;
+}
+
+.boom > img {
+    height: 90%;
+}
