@@ -42,8 +42,28 @@ main {
 }
 
 main > * {
-    width: 100%;
+    width: 1400px;
     margin-bottom: 40px;
+}
+
+/* Chart section */
+
+.chart {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: auto;
+}
+
+.chart > img {
+    width: 100%;
+    max-height: 45vh;
+}
+
+.chart > h1 {
+    font-size: 18.72px;
+    padding: 10px 20px;
+    color: var(--primary-color-dark);
+    margin: 0;
 }
 
 /* Sidebar */
