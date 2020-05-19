@@ -198,6 +198,10 @@ main > * {
             flex-grow: 3;
         }
 
+        main section.miniOverview > .prestaties > h5 {
+            margin-bottom: 20px;
+        }
+
             main section.miniOverview > .prestaties > .prestatieContainer {
                 display: flex;
                 flex-direction: row;
