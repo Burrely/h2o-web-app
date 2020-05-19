@@ -33,13 +33,17 @@ a {
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
-    margin-left: 200px;
-    overflow: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 260px;
+    padding: 20px 80px;
 }
 
 main > * {
-    display: inline-block;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 /* Sidebar */
