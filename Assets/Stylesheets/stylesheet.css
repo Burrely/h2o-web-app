@@ -217,7 +217,7 @@ main section.miniOverview > .huidigVerbruik {
 /* Progress */
 
 .boomOverzicht {
-    display: inline-block;
+    display: flex;
 }
 
 .boom {
@@ -229,9 +229,14 @@ main section.miniOverview > .huidigVerbruik {
 
 .boomOverzicht > * > h1 {
     color: var(--secondary-color-dark);
-    padding: 10px 20px;
+    padding: 10px 20px 10px 0px;
     font-size: 18.72px;
     margin: 0;
+}
+
+.boomOverzicht > * > h5 {
+    color: var(--primary-color);
+    
 }
 
 .boom > img {
@@ -239,5 +244,18 @@ main section.miniOverview > .huidigVerbruik {
 }
 
 .weekOverzicht {
-    margin-left: 30vw;
+    height: 65vh;
+    margin: 0;
+}
+
+.weekOverzicht > h1, h5 {
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+.weekOverzicht > p {
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 0px
 }
