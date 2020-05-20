@@ -182,14 +182,17 @@ main > * {
 
 /* Overzicht */
 
-
     main section.miniOverview {
         display: grid;
+    }
+
+    main.home section.miniOverview {
+        height: 200px;
         grid-template-columns: 50% 16.66% 33.33%;
     }
 
     main section.miniOverview > * {
-        height: 200px;
+        height: 100%;
         margin-right: 10px;
         padding: 10px 20px;
         border: 1px solid var(--secondary-color);
@@ -244,8 +247,14 @@ main > * {
             main section.miniOverview > * > .shortList > * * {
                 margin: 0;
             }
-            
-    /* 6 */
+        
+    
+/* Waterverbruik */
+
+main.overview section.miniOverview {
+    height: 280px;
+    grid-template-columns: 66.66% 16.66% 16.66%;
+}
 
 /* Progress */
 
