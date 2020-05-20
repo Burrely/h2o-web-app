@@ -288,7 +288,7 @@ main > * {
 
 main.overview section.miniOverview {
     height: 280px;
-    grid-template-columns: 66.66% 16.66% 16.66%;
+    grid-template-columns: 60% 20% 20%;
 }
 
 main > section > .headingContainer {
@@ -320,8 +320,15 @@ main > section > .headingContainer {
 
 main.overview section.chart > img {
     width: calc(100% + 82px);
+    margin-top: -20px;
     margin-left: -81px;
-    height: auto;
+    height: 440px;
+}
+
+main.overview section.miniOverview section > img {
+    margin-top: -14px;
+    margin-left: -77px;
+    height: 302px;
 }
 
 /* Progress */
