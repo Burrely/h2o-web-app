@@ -273,3 +273,7 @@ main > * {
 .notification{
     border: 1px solid var(--secondary-color);
 }
+.filter div{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark);
+}
