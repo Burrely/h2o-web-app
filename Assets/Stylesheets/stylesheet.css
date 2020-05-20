@@ -83,7 +83,7 @@ main > * {
 
 .sidebar > * {
     border-radius: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
     padding: 10px;
     background-color: var(--background);
 }
