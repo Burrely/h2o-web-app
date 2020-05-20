@@ -207,15 +207,26 @@ main section.miniOverview > .huidigVerbruik {
 .buttonImage{
     height: 50px;
     width: 50px;
+    border-color: #50C5D2;
+    border-radius: 50%;
 }
-/*.buttonSectie *{
-    
-} */
-/* 6 */
-/* 6 */
+.buttonSectie h3{
+    color: #50C5D2;
+    margin-left: 5px;
+} 
+.buttonSectie h5{
+    color: #f58118;
+    margin-left: 5px;
+}
+.buttonSectie *{
+    display: inline-block;
 
-/* Progress */
-
+}
+.buttonSectie button{
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid #50C5D2;
+}
 .boomOverzicht {
     display: flex;
 }
@@ -234,9 +245,9 @@ main section.miniOverview > .huidigVerbruik {
     margin: 0;
 }
 
-.boomOverzicht > * > h5 {
+.weekOverzicht > h1 > span {
     color: var(--primary-color);
-    
+    font-size: 15px;
 }
 
 .boom > img {
@@ -248,14 +259,28 @@ main section.miniOverview > .huidigVerbruik {
     margin: 0;
 }
 
-.weekOverzicht > h1, h5 {
+.weekOverzicht > h1 {
+    margin: 0;
     margin-left: 10px;
-    margin-bottom: 0;
+    line-height: 15px;
 }
 
 .weekOverzicht > p {
     border-bottom: 1px solid var(--secondary-color);
     font-size: 30px;
     font-weight: 700;
-    padding-bottom: 0px
+    margin: 0px;
+    margin-top: 15px;
+    padding-left: 10px;
+    color: var(--primary-color-dark);
+}
+
+p > span {
+    padding-left: 200px;
+    color: var(--tint-dark);
+}
+
+p.futureDay {
+   color: var(--primary-color);
+   border-bottom: 0px solid var(--secondary-color);
 }
