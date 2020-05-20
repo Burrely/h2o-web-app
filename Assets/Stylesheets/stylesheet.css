@@ -260,6 +260,29 @@ main.overview section.miniOverview {
     grid-template-columns: 66.66% 16.66% 16.66%;
 }
 
+.headingContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.headingContainer > * {
+    margin: 0;
+}
+
+.headingContainer .navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headingContainer .navigation > * {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 20px;
+}
+
 /* Progress */
 
 .boomOverzicht {
