@@ -321,6 +321,8 @@ main > * {
 }
 
 .weekOverzicht > p {
+    display: grid;
+    grid-template-columns: 200px 100px;
     border-bottom: 1px solid var(--secondary-color);
     font-size: 30px;
     font-weight: 700;
@@ -331,7 +333,6 @@ main > * {
 }
 
 p > span {
-    padding-left: 200px;
     color: var(--tint-dark);
 }
 
