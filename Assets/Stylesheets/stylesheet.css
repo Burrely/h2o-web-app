@@ -332,25 +332,104 @@ main.overview section.miniOverview section > img {
 }
 
 /* Progress */
-
-.boomOverzicht {
+.buttonImage{
+    height: 50px;
+    width: 50px;
+    border-color: #50C5D2;
+    border-radius: 50%;
+}
+.buttonSectie h3{
+    color: #50C5D2;
+    margin-left: 5px;
+} 
+.buttonSectie h5{
+    color: #f58118;
+    margin-left: 5px;
+}
+.buttonSectie *{
     display: inline-block;
+}
+.buttonSectie button{
+    border-radius: 50%;
+    background-color: white;
+
+}
+.buttonSectie > div div > *{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2px;
+}
+.buttonSectie > div div > h3{
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+.buttonSectie > div div > h5{
+    vertical-align: middle;
+}
+.buttonSectie > div{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.boomOverzicht {
+    display: flex;
 }
 
 .boom {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    height: 65vh;
-    width: 30vw;
+    height: 100%;
+    width: 40%;
 }
 
 .boomOverzicht > * > h1 {
     color: var(--secondary-color-dark);
-    padding: 10px 20px;
     font-size: 18.72px;
     margin: 0;
+    padding-top: 20px;
+}
+
+.boomOverzicht > .boom > h1 {
+    padding-left: 10px;
+}
+
+.weekOverzicht > h1 > span {
+    color: var(--primary-color);
+    font-size: 15px;
 }
 
 .boom > img {
     height: 90%;
+}
+
+.weekOverzicht {
+    height: 65vh;
+    margin: 0;
+}
+
+.weekOverzicht > h1 {
+    margin: 0;
+    margin-left: 10px;
+    line-height: 15px;
+}
+
+.weekOverzicht > p {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+    margin-top: 15px;
+    padding-left: 10px;
+    color: var(--primary-color-dark);
+}
+
+p > span {
+    color: var(--tint-dark);
+}
+
+p.futureDay {
+   color: var(--primary-color);
+   border-bottom: 0px solid var(--secondary-color);
 }
