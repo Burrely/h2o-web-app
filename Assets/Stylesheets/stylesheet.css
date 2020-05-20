@@ -252,16 +252,12 @@ main > * {
                 margin: 0;
             }
 
-    .voortgang > div.imagealign {
+    div.imagealign {
         text-align: center;
     }
 
     .voortgang > div > img {
         width: 100%;
-    }
-
-    .huidigVerbruik > div {
-        text-align: center;
     }
 
     /* .huidigVerbruik > div {
