@@ -30,16 +30,45 @@ a {
     text-decoration: none;
 }
 
+.primary-color {
+    color: var(--primary-color) !important ;
+}
+
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
-    margin-left: 200px;
-    overflow: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1560px;
+    margin-left: 260px;
+    padding: 20px 80px;
 }
 
 main > * {
-    display: inline-block;
+    width: 1400px;
+    margin-bottom: 40px;
+}
+
+/* Chart section */
+
+.chart {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: auto;
+}
+
+.chart > img {
+    width: 100%;
+    height: 400px;
+}
+
+.chart > h1 {
+    font-size: 18.72px;
+    padding: 10px 20px;
+    color: var(--primary-color-dark);
+    margin: 0;
 }
 
 /* Sidebar */
@@ -115,4 +144,135 @@ main > * {
 
 .sidebar > nav > *:last-child {
     border-bottom: none;
+}
+
+.notifications {
+    height: 60px;
+}
+
+.notifications * {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    background-color: #eeeeee;
+    color: red;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.notifications > div {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.notifications img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* PAGES */
+
+/* Overzicht */
+
+
+    main section.miniOverview {
+        display: grid;
+        grid-template-columns: 50% 16.66% 33.33%;
+    }
+
+    main section.miniOverview > * {
+        height: 200px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 10px;
+        color: var(--primary-color-dark);
+    }
+
+    main section.miniOverview section > * {
+        margin: 0;
+    }
+
+    main section.miniOverview > *:last-child {
+        margin-right: 0;
+    }
+
+    main section.miniOverview > * > h1 {
+        margin-bottom: -4px;
+    }
+
+        main section.miniOverview > .prestaties {
+            flex-grow: 3;
+        }
+
+        main section.miniOverview > * > h5 {
+            margin-bottom: 20px;
+        }
+
+            main section.miniOverview > * > .shortList {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+            }
+
+            main section.miniOverview > * > .shortList h1 {
+                display: block;
+                margin-right: 10px;
+                line-height: 0;
+                font-size: 36pt;
+            }
+
+            main section.miniOverview > * > .shortList > * {
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin-right: 20px;
+                color: var(--secondary-color-dark);
+            }
+
+            main section.miniOverview > * > .shortList > * > img {
+                width: 64px;
+                height: 64px;
+                margin-right: 10px;
+                background-color: grey;
+            }
+
+            main section.miniOverview > * > .shortList > * * {
+                margin: 0;
+            }
+
+        main section.miniOverview > .voortgang {
+            flex-grow: 1;
+        }
+
+        main section.miniOverview > .huidigVerbruik {
+            flex-grow: 2;
+        }
+    /* 6 */
+
+/* Progress */
+
+.boomOverzicht {
+    display: inline-block;
+}
+
+.boom {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: 65vh;
+    width: 30vw;
+}
+
+.boomOverzicht > * > h1 {
+    color: var(--secondary-color-dark);
+    padding: 10px 20px;
+    font-size: 18.72px;
+    margin: 0;
+}
+
+.boom > img {
+    height: 90%;
 }
