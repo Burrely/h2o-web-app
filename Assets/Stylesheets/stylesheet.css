@@ -251,8 +251,39 @@ main > * {
             main section.miniOverview > * > .shortList > * * {
                 margin: 0;
             }
-        
+
+    .voortgang > div.imagealign {
+        text-align: center;
+    }
+
+    .voortgang > div > img {
+        width: 100%;
+    }
+
+    .huidigVerbruik > div {
+        text-align: center;
+    }
+
+    /* .huidigVerbruik > div {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 20px 50px;
+    } */
+
     
+/* 
+    div.square {
+        height: 20px;
+        width: 20px;
+        
+    }
+
+    div#red {
+        background-color: red;
+    } */
+
+
+
 /* Waterverbruik */
 
 main.overview section.miniOverview {
