@@ -83,7 +83,7 @@ main > * {
 
 .sidebar > * {
     border-radius: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
     padding: 10px;
     background-color: var(--background);
 }
@@ -134,15 +134,20 @@ main > * {
     color: var(--primary-color-dark);
 }
 
+.sidebar > nav > *:first-child {
+    padding-top: 10px;
+}
+
 .sidebar > nav > * {
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 18px 0;
     border-bottom: 1px solid var(--tint);
 }
 
 .sidebar > nav > *:last-child {
+    padding-bottom: 10px;
     border-bottom: none;
 }
 
