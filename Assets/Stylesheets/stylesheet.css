@@ -318,6 +318,12 @@ main > section > .headingContainer {
     margin-right: 20px;
 }
 
+main.overview section.chart > img {
+    width: calc(100% + 82px);
+    margin-left: -81px;
+    height: auto;
+}
+
 /* Progress */
 
 .boomOverzicht {
