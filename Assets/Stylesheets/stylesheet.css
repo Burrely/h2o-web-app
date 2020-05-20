@@ -30,6 +30,10 @@ a {
     text-decoration: none;
 }
 
+.primary-color {
+    color: var(--primary-color) !important ;
+}
+
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
@@ -37,6 +41,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 1560px;
     margin-left: 260px;
     padding: 20px 80px;
 }
@@ -56,7 +61,7 @@ main > * {
 
 .chart > img {
     width: 100%;
-    max-height: 45vh;
+    height: 400px;
 }
 
 .chart > h1 {
@@ -78,7 +83,7 @@ main > * {
 
 .sidebar > * {
     border-radius: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
     padding: 10px;
     background-color: var(--background);
 }
@@ -129,81 +134,131 @@ main > * {
     color: var(--primary-color-dark);
 }
 
+.sidebar > nav > *:first-child {
+    padding-top: 10px;
+}
+
 .sidebar > nav > * {
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 18px 0;
     border-bottom: 1px solid var(--tint);
 }
 
 .sidebar > nav > *:last-child {
+    padding-bottom: 10px;
     border-bottom: none;
 }
-.notifications *{
+
+.notifications {
+    height: 60px;
+}
+
+.notifications * {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
     background-color: #eeeeee;
     color: red;
-   width: 1400px;
-   text-align: left;
-   border-radius: 10px;
-   display: inline-block;
+    text-align: left;
+    border-radius: 10px;
 }
-.notificationImage{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-.content{
-    padding-left: 20px;
-    height: 100px;
+
+.notifications > div {
+    padding: 0 20px;
+    height: 100%;
     display: flex;
     align-items: center;
 }
-.notificationText{
-    width: 800px;
+
+.notifications img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 /* PAGES */
 
 /* Overzicht */
-main section.miniOverview {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-}
 
-main section.miniOverview > * {
-    height: 200px;
-    margin-right: 10px;
-    padding: 10px 20px;
-    border: 1px solid var(--secondary-color);
-    border-radius: 10px;
-    color: var(--primary-color-dark);
-}
 
-main section.miniOverview section > * {
-    margin: 0;
-}
+    main section.miniOverview {
+        display: grid;
+        grid-template-columns: 50% 16.66% 33.33%;
+    }
 
-main section.miniOverview > *:last-child {
-    margin-right: 0;
-}
+    main section.miniOverview > * {
+        height: 200px;
+        margin-right: 10px;
+        padding: 10px 20px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 10px;
+        color: var(--primary-color-dark);
+    }
 
-main section.miniOverview > * > h1 {
-    margin-bottom: -4px;
-}
+    main section.miniOverview section > * {
+        margin: 0;
+    }
 
-main section.miniOverview > .prestaties {
-    flex-grow: 3;
-}
+    main section.miniOverview > *:last-child {
+        margin-right: 0;
+    }
 
-main section.miniOverview > .voortgang {
-    flex-grow: 1;
-}
+    main section.miniOverview > * > h1 {
+        margin-bottom: -4px;
+    }
 
-main section.miniOverview > .huidigVerbruik {
-    flex-grow: 2;
-}
+        main section.miniOverview > .prestaties {
+            flex-grow: 3;
+        }
+
+        main section.miniOverview > * > h5 {
+            margin-bottom: 20px;
+        }
+
+            main section.miniOverview > * > .shortList {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+            }
+
+            main section.miniOverview > * > .shortList h1 {
+                display: block;
+                margin-right: 10px;
+                line-height: 0;
+                font-size: 36pt;
+            }
+
+            main section.miniOverview > * > .shortList > * {
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin-right: 20px;
+                color: var(--secondary-color-dark);
+            }
+
+            main section.miniOverview > * > .shortList > * > img {
+                width: 64px;
+                height: 64px;
+                margin-right: 10px;
+                background-color: grey;
+            }
+
+            main section.miniOverview > * > .shortList > * * {
+                margin: 0;
+            }
+
+        main section.miniOverview > .voortgang {
+            flex-grow: 1;
+        }
+
+        main section.miniOverview > .huidigVerbruik {
+            flex-grow: 2;
+        }
+    /* 6 */
+
+/* Progress */
 .buttonImage{
     height: 50px;
     width: 50px;
@@ -219,8 +274,8 @@ main section.miniOverview > .huidigVerbruik {
     margin-left: 5px;
 }
 .buttonSectie *{
-    display: inline-block;
 
+    display: inline-block;
 }
 .buttonSectie button{
     border-radius: 50%;
@@ -236,46 +291,46 @@ main section.miniOverview > .huidigVerbruik {
     border-radius: 10px;
     height: 65vh;
     width: 30vw;
-}
 
+}
 .boomOverzicht > * > h1 {
     color: var(--secondary-color-dark);
     padding: 10px 20px 10px 0px;
     font-size: 18.72px;
-    margin: 0;
-}
-
 .weekOverzicht > h1 > span {
+    margin: 0;
+
+}
     color: var(--primary-color);
     font-size: 15px;
 }
 
-.boom > img {
     height: 90%;
+.boom > img {
 }
 
-.weekOverzicht {
     height: 65vh;
+.weekOverzicht {
     margin: 0;
 }
 
 .weekOverzicht > h1 {
-    margin: 0;
     margin-left: 10px;
-    line-height: 15px;
+    margin: 0;
     font-size: 22px;
-}
+    line-height: 15px;
 
+}
 .weekOverzicht > p {
-    border-bottom: 1px solid var(--secondary-color);
     font-size: 30px;
     font-weight: 700;
+    border-bottom: 1px solid var(--secondary-color);
     margin: 0px;
     margin-top: 15px;
     padding-left: 10px;
-    color: var(--primary-color-dark);
 }
 
+    color: var(--primary-color-dark);
 p > span {
     padding-left: 200px;
     color: var(--tint-dark);
