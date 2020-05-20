@@ -270,3 +270,6 @@ main > * {
 .boom > img {
     height: 90%;
 }
+.notification{
+    border: 1px solid var(--secondary-color);
+}
