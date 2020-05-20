@@ -209,10 +209,6 @@ main > * {
         margin-bottom: -4px;
     }
 
-        main section.miniOverview > .prestaties {
-            flex-grow: 3;
-        }
-
         main section.miniOverview > * > h5 {
             margin-bottom: 20px;
         }
@@ -248,14 +244,7 @@ main > * {
             main section.miniOverview > * > .shortList > * * {
                 margin: 0;
             }
-
-        main section.miniOverview > .voortgang {
-            flex-grow: 1;
-        }
-
-        main section.miniOverview > .huidigVerbruik {
-            flex-grow: 2;
-        }
+            
     /* 6 */
 
 /* Progress */
