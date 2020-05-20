@@ -34,6 +34,10 @@ a {
     color: var(--primary-color) !important ;
 }
 
+.primary-color-dark {
+    color: var(--primary-color-dark) !important;
+}
+
 .secondary-color-dark {
     color: var(--secondary-color-dark) !important ;
 }
@@ -285,6 +289,10 @@ main > * {
 main.overview section.miniOverview {
     height: 280px;
     grid-template-columns: 66.66% 16.66% 16.66%;
+}
+
+main > section > .headingContainer {
+    padding: 10px 20px;
 }
 
 .headingContainer {
