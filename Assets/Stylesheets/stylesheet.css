@@ -289,15 +289,19 @@ main > * {
 .boom {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    height: 65vh;
-    width: 30vw;
+    height: 100%;
+    width: 40%;
 }
 
 .boomOverzicht > * > h1 {
     color: var(--secondary-color-dark);
-    padding: 10px 20px 10px 0px;
     font-size: 18.72px;
     margin: 0;
+    padding-top: 20px;
+}
+
+.boomOverzicht > .boom > h1 {
+    padding-left: 10px;
 }
 
 .weekOverzicht > h1 > span {
