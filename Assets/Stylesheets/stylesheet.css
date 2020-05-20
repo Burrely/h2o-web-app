@@ -144,27 +144,32 @@ main > * {
 .sidebar > nav > *:last-child {
     border-bottom: none;
 }
+
+.notifications {
+    height: 60px;
+}
+
 .notifications * {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
     background-color: #eeeeee;
     color: red;
-   width: 1400px;
-   text-align: left;
-   border-radius: 10px;
-   display: inline-block;
+    text-align: left;
+    border-radius: 10px;
 }
-.notificationImage{
-    width: 50px;
-    height: 50px;
-    margin-right: 10px;
-}
-.content{
-    padding-left: 20px;
-    height: 100px;
+
+.notifications > div {
+    padding: 0 20px;
+    height: 100%;
     display: flex;
     align-items: center;
 }
-.notificationText{
-    width: 800px;
+
+.notifications img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
 
 /* PAGES */
