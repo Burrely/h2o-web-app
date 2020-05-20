@@ -291,46 +291,45 @@ main > * {
     border-radius: 10px;
     height: 65vh;
     width: 30vw;
-
 }
+
 .boomOverzicht > * > h1 {
     color: var(--secondary-color-dark);
     padding: 10px 20px 10px 0px;
     font-size: 18.72px;
-.weekOverzicht > h1 > span {
     margin: 0;
-
 }
+
+.weekOverzicht > h1 > span {
     color: var(--primary-color);
     font-size: 15px;
 }
 
-    height: 90%;
 .boom > img {
+    height: 90%;
 }
 
-    height: 65vh;
 .weekOverzicht {
+    height: 65vh;
     margin: 0;
 }
 
 .weekOverzicht > h1 {
-    margin-left: 10px;
     margin: 0;
-    font-size: 22px;
+    margin-left: 10px;
     line-height: 15px;
-
 }
+
 .weekOverzicht > p {
+    border-bottom: 1px solid var(--secondary-color);
     font-size: 30px;
     font-weight: 700;
-    border-bottom: 1px solid var(--secondary-color);
     margin: 0px;
     margin-top: 15px;
     padding-left: 10px;
+    color: var(--primary-color-dark);
 }
 
-    color: var(--primary-color-dark);
 p > span {
     padding-left: 200px;
     color: var(--tint-dark);
