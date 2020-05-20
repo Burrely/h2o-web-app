@@ -274,13 +274,20 @@ main > * {
     margin-left: 5px;
 }
 .buttonSectie *{
-
     display: inline-block;
 }
 .buttonSectie button{
     border-radius: 50%;
     background-color: white;
     border: 2px solid #50C5D2;
+}
+.buttonSectie > div div > *{
+    display: block;
+    margin: 0;
+}
+.buttonSectie > div{
+    margin-left: 30px;
+    margin-right: 50px;
 }
 .boomOverzicht {
     display: flex;
@@ -289,19 +296,15 @@ main > * {
 .boom {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    height: 100%;
-    width: 40%;
+    height: 65vh;
+    width: 30vw;
 }
 
 .boomOverzicht > * > h1 {
     color: var(--secondary-color-dark);
+    padding: 10px 20px 10px 0px;
     font-size: 18.72px;
     margin: 0;
-    padding-top: 20px;
-}
-
-.boomOverzicht > .boom > h1 {
-    padding-left: 10px;
 }
 
 .weekOverzicht > h1 > span {
@@ -325,8 +328,6 @@ main > * {
 }
 
 .weekOverzicht > p {
-    display: grid;
-    grid-template-columns: 200px 100px;
     border-bottom: 1px solid var(--secondary-color);
     font-size: 30px;
     font-weight: 700;
@@ -337,6 +338,7 @@ main > * {
 }
 
 p > span {
+    padding-left: 200px;
     color: var(--tint-dark);
 }
 
