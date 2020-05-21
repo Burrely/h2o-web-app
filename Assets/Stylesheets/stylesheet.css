@@ -276,13 +276,21 @@ main > * {
 .filter div{
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color-dark);
-    display: flex;
-    justify-content: center;
 }
 .filter * {
-    display: flex;
-    justify-content: flex-end;
+    float: left;
     cursor: pointer;
-    margin: 0;
-    margin-right: 20px;
+    width: 25%;
+    
+}
+.filter div:hover{
+    background-color: var(--secondary-color-dark);
+    color: white;
+}
+.filter div:active{
+    background-color: var(--secondary-color);
+}
+.filter div > h3 {
+    display: flex;
+    margin-left: 20px;
 }
