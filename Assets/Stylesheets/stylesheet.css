@@ -408,6 +408,30 @@ main.overview section.miniOverview section > img {
     margin: auto;
     height: 90%;
 }
+.notification{
+    border: 1px solid var(--secondary-color);
+}
+.filter div{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark);
+}
+.filter * {
+    float: left;
+    cursor: pointer;
+    width: 25%;
+    
+}
+.filter div:hover{
+    background-color: var(--secondary-color-dark);
+    color: white;
+}
+.filter div:active{
+    background-color: var(--secondary-color);
+}
+.filter div > h3 {
+    display: flex;
+    margin-left: 20px;
+}
 
 .weekOverzicht {
     height: 100%;
