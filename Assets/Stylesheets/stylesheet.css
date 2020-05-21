@@ -245,11 +245,16 @@ main > * {
                 color: var(--secondary-color-dark);
             }
 
-            main section.miniOverview > * > .shortList > * > img {
+            main section.miniOverview > * > .shortList > * > div.graphic {
                 width: 64px;
                 height: 64px;
                 margin-right: 10px;
-                background-color: grey;
+            }
+
+            main section.miniOverview > * > .shortList > * > div.graphic.unclaimedTrophy {
+                background-image: url("../Graphics/unclaimed_trophy.png");
+                background-repeat: no-repeat;
+                background-position: center;
             }
 
             main section.miniOverview > * > .shortList > * * {
