@@ -1,8 +1,8 @@
 /* Main styling */
 
 :root {
-    --primary-color: #fbac18;
-    --primary-color-dark: #f58118;
+    --primary-color: #f58118bf;
+    --primary-color-dark: #FF3400;
     --secondary-color: #50C5D2;
     --secondary-color-dark: #048a96;
     --tint: #eeeeee;
@@ -407,6 +407,30 @@ main.overview section.miniOverview section > img {
     display: block;
     margin: auto;
     height: 90%;
+}
+.notification{
+    border: 1px solid var(--secondary-color);
+}
+.filter div{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark);
+}
+.filter * {
+    float: left;
+    cursor: pointer;
+    width: 25%;
+    
+}
+.filter div:hover{
+    background-color: var(--secondary-color-dark);
+    color: white;
+}
+.filter div:active{
+    background-color: var(--secondary-color);
+}
+.filter div > h3 {
+    display: flex;
+    margin-left: 20px;
 }
 
 .weekOverzicht {
