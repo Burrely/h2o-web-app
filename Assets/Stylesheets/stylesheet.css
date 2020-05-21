@@ -34,6 +34,14 @@ a {
     color: var(--primary-color) !important ;
 }
 
+.primary-color-dark {
+    color: var(--primary-color-dark) !important;
+}
+
+.secondary-color-dark {
+    color: var(--secondary-color-dark) !important ;
+}
+
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
@@ -182,14 +190,17 @@ main > * {
 
 /* Overzicht */
 
-
     main section.miniOverview {
         display: grid;
+    }
+
+    main.home section.miniOverview {
+        height: 200px;
         grid-template-columns: 50% 16.66% 33.33%;
     }
 
     main section.miniOverview > * {
-        height: 200px;
+        height: 100%;
         margin-right: 10px;
         padding: 10px 20px;
         border: 1px solid var(--secondary-color);
@@ -208,10 +219,6 @@ main > * {
     main section.miniOverview > * > h1 {
         margin-bottom: -4px;
     }
-
-        main section.miniOverview > .prestaties {
-            flex-grow: 3;
-        }
 
         main section.miniOverview > * > h5 {
             margin-bottom: 20px;
@@ -249,35 +256,182 @@ main > * {
                 margin: 0;
             }
 
-        main section.miniOverview > .voortgang {
-            flex-grow: 1;
-        }
+    div.imagealign {
+        text-align: center;
+    }
 
-        main section.miniOverview > .huidigVerbruik {
-            flex-grow: 2;
-        }
-    /* 6 */
+    .voortgang > div > img {
+        width: 100%;
+    }
+
+    /* .huidigVerbruik > div {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 20px 50px;
+    } */
+
+    
+/* 
+    div.square {
+        height: 20px;
+        width: 20px;
+        
+    }
+
+    div#red {
+        background-color: red;
+    } */
+
+
+
+/* Waterverbruik */
+
+main.overview section.miniOverview {
+    height: 280px;
+    grid-template-columns: 60% 20% 20%;
+}
+
+main > section > .headingContainer {
+    padding: 10px 20px;
+}
+
+.headingContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.headingContainer > * {
+    margin: 0;
+}
+
+.headingContainer .navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headingContainer .navigation > * {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 20px;
+}
+
+main.overview section.chart > img {
+    width: calc(100% + 82px);
+    margin-top: -20px;
+    margin-left: -81px;
+    height: 440px;
+}
+
+main.overview section.miniOverview section > img {
+    margin-top: -14px;
+    margin-left: -77px;
+    height: 302px;
+}
 
 /* Progress */
-
-.boomOverzicht {
+.buttonImage{
+    height: 50px;
+    width: 50px;
+    border-color: #50C5D2;
+    border-radius: 50%;
+}
+.buttonSectie h3{
+    color: #50C5D2;
+    margin-left: 5px;
+} 
+.buttonSectie h5{
+    color: #f58118;
+    margin-left: 5px;
+}
+.buttonSectie *{
     display: inline-block;
+}
+.buttonSectie button{
+    border-radius: 50%;
+    background-color: white;
+
+}
+.buttonSectie > div div > *{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2px;
+}
+.buttonSectie > div div > h3{
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+.buttonSectie > div div > h5{
+    vertical-align: middle;
+}
+.buttonSectie > div{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.boomOverzicht {
+    display: flex;
 }
 
 .boom {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    height: 65vh;
-    width: 30vw;
+    height: 780px;
+    width: 40%;
 }
 
 .boomOverzicht > * > h1 {
     color: var(--secondary-color-dark);
-    padding: 10px 20px;
     font-size: 18.72px;
     margin: 0;
+    padding-top: 20px;
+}
+
+.boomOverzicht > .boom > h1 {
+    padding-left: 10px;
+}
+
+.weekOverzicht > h1 > span {
+    color: var(--primary-color);
+    font-size: 15px;
 }
 
 .boom > img {
+    display: block;
+    margin: auto;
     height: 90%;
+}
+
+.weekOverzicht {
+    height: 100%;
+    margin: 0;
+}
+
+.weekOverzicht > h1 {
+    margin: 0;
+    margin-left: 10px;
+    line-height: 15px;
+}
+
+.weekOverzicht > p {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+    margin-top: 15px;
+    padding-left: 10px;
+    color: var(--primary-color-dark);
+}
+
+p > span {
+    color: var(--tint-dark);
+}
+
+p.futureDay {
+   color: var(--primary-color);
+   border-bottom: 0px solid var(--secondary-color);
 }
