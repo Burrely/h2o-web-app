@@ -213,6 +213,12 @@ main > * {
         color: var(--primary-color-dark);
     }
 
+    main section.miniOverview > section.voortgang > img {
+        display: block;
+        height: 110px;
+        margin: auto;
+    }
+
     main section.miniOverview section > * {
         margin: 0;
     }
