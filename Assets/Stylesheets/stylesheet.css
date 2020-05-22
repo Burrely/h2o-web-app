@@ -8,6 +8,7 @@
     --tertiary-color: #FF3400;
     --tint: #eeeeee;
     --tint-dark: #707070;
+    --tint-darker: #606060;
     --background: white;
 }
 
@@ -419,29 +420,36 @@ main.overview section.miniOverview section > img {
     margin: auto;
     height: 90%;
 }
-.notification{
+
+.notification {
     border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin: 0px;
+    height: 100%;
 }
+
 .filter div{
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .filter * {
     float: left;
-    cursor: pointer;
     width: 25%;
-    
+    cursor: pointer;
 }
 .filter div:hover{
-    background-color: var(--secondary-color-dark);
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
     color: white;
 }
-.filter div:active{
-    background-color: var(--secondary-color);
-}
+
 .filter div > h3 {
-    display: flex;
-    margin-left: 20px;
+    width: 100%;
+    text-align: center;
 }
 
 .weekOverzicht {
@@ -449,10 +457,69 @@ main.overview section.miniOverview section > img {
     margin: 0;
 }
 
-.weekOverzicht > h1 {
+.notificationBox {
+    padding-top: 20px;
+    margin-top: 87px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 672px;
+}
+
+.notificationBox::-webkit-scrollbar {
+    width: 20px;
+}
+
+.notificationBox::-webkit-scrollbar-track {
+    background-color: var(--tint);
+    border-radius: 10px;
+}
+
+.notificationBox::-webkit-scrollbar-thumb {
+    background: var(--tint-dark);
+    border-radius: 10px;
+}
+
+.notificationBox::-webkit-scrollbar-thumb:hover {
+    background: var(--tint-darker);
+}
+
+.notificationBox::-webkit-scrollbar-corner { 
+    border-radius: 12px;
+}
+
+.notificationBox > .box {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin: 0px 20px 20px 20px;
+    height: 140px;
+}
+
+.box > img {
+    float: left;
+}
+
+.notification > h1 {
+    color: var(--secondary-color-dark);
+    padding-left: 10px;
+}
+
+.box > h1 {
+    color: var(--secondary-color-dark);
+}
+
+.box > h5 {
+    color: var(--primary-color);
+}
+
+.box > h1, h5 {
     margin: 0;
     margin-left: 10px;
-    line-height: 15px;
+    line-height: 0px;
+    padding-top: 20px;
+}
+
+.box > img {
+    padding: 10px 20px;
 }
 
 .weekOverzicht > p {
@@ -606,4 +673,21 @@ body.login main > section {
     align-items: center;
     text-align: center;
     width: 100%;
+}
+
+
+div.active {
+    background-color: var(--secondary-color-dark);
+    border-color: var(--secondary-color-dark);
+    color: var(--background);
+}
+div.active > h3:hover {
+    cursor: default;
+}
+
+div.active:hover {
+    background-color: var(--secondary-color-dark);
+    border-color: var(--secondary-color-dark);
+    color: var(--background);
+    cursor: default;
 }
