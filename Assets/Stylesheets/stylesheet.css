@@ -414,11 +414,15 @@ main.overview section.miniOverview section > img {
 .filter div{
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .filter * {
     float: left;
     cursor: pointer;
     width: 25%;
+
     
 }
 .filter div:hover{
@@ -430,7 +434,7 @@ main.overview section.miniOverview section > img {
 }
 .filter div > h3 {
     display: flex;
-    margin-left: 20px;
+
 }
 
 .weekOverzicht {
