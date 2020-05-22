@@ -484,15 +484,18 @@ header img{
     color: var(--secondary-color-dark);
     width: 50%;
     margin-bottom: 10px;
+    width: 400px;
 }
 .inlog{
     background-color: var(--secondary-color-dark);
     color: white !important;
     margin-top: 40px;
 }
-.contentlogin * {
+.inlogMain{
+    padding-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 100%;
 }
