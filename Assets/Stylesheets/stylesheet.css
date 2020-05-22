@@ -431,12 +431,9 @@ main.overview section.miniOverview section > img {
     cursor: pointer;
 }
 .filter div:hover{
-    background-color: var(--secondary-color-dark);
-    color: 
-    white;
-}
-.filter div:active{
     background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
 }
 
 .filter div > h3 {
@@ -532,4 +529,21 @@ p > span {
 p.futureDay {
    color: var(--primary-color);
    border-bottom: 0px solid var(--secondary-color);
+}
+
+
+div.active {
+    background-color: var(--secondary-color-dark);
+    border-color: var(--secondary-color-dark);
+    color: var(--background);
+}
+div.active > h3:hover {
+    cursor: default;
+}
+
+div.active:hover {
+    background-color: var(--secondary-color-dark);
+    border-color: var(--secondary-color-dark);
+    color: var(--background);
+    cursor: default;
 }
