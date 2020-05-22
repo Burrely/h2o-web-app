@@ -488,8 +488,11 @@ header img{
 }
 .inlog{
     background-color: var(--secondary-color-dark);
-    color: white !important;
     margin-top: 40px;
+    text-decoration: none;
+}
+.inlog a{
+    color: white;
 }
 .inlogMain{
     padding-top: 40px;
