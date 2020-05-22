@@ -383,7 +383,7 @@ main.overview section.miniOverview section > img {
 .boom {
     border: 1px solid var(--secondary-color);
     border-radius: 10px;
-    height: 780px;
+    height: 680px;
     width: 40%;
 }
 
