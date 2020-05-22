@@ -2,9 +2,10 @@
 
 :root {
     --primary-color: #f58118bf;
-    --primary-color-dark: #FF3400;
+    --primary-color-dark: #f58118;
     --secondary-color: #50C5D2;
     --secondary-color-dark: #048a96;
+    --tertiary-color: #FF3400;
     --tint: #eeeeee;
     --tint-dark: #707070;
     --background: white;
