@@ -505,6 +505,26 @@ body.login main > section {
     border-radius: 10px;
 }
 
+body.login main > section div.logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -168px;
+}
+
+body.login main > section div.logoContainer img {
+    margin-right: 40px;
+}
+
+body.login main > section div.logoContainer h1:first-child {
+    color: var(--secondary-color-dark);
+}
+
+body.login main > section div.logoContainer h1 {
+    margin: 0;
+    font-size: 34pt;
+    color: var(--tint-dark);
+}
 
 
 
