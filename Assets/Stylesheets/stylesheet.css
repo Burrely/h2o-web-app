@@ -43,6 +43,10 @@ a {
     color: var(--secondary-color-dark) !important ;
 }
 
+.tertiary-color {
+    color: var(--tertiary-color) !important ;
+}
+
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
@@ -169,7 +173,7 @@ main > * {
     width: 100%;
     margin: 0;
     background-color: #eeeeee;
-    color: red;
+    color: var(--tertiary-color);
     text-align: left;
     border-radius: 10px;
 }
