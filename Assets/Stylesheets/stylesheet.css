@@ -7,6 +7,7 @@
     --secondary-color-dark: #048a96;
     --tint: #eeeeee;
     --tint-dark: #707070;
+    --tint-darker: #606060;
     --background: white;
 }
 
@@ -464,11 +465,16 @@ main.overview section.miniOverview section > img {
     border-radius: 10px;
 }
 
-.notifications::-webkit-scrollbar-thumb {
+.notificationBox::-webkit-scrollbar-thumb {
     background: var(--tint-dark);
+    border-radius: 10px;
 }
 
-.notifications::-webkit-scrollbar-corner { 
+.notificationBox::-webkit-scrollbar-thumb:hover {
+    background: var(--tint-darker);
+}
+
+.notificationBox::-webkit-scrollbar-corner { 
     border-radius: 12px;
 }
 
@@ -499,8 +505,8 @@ main.overview section.miniOverview section > img {
 .box > h1, h5 {
     margin: 0;
     margin-left: 10px;
-    line-height: 10px;
-    padding-top: 10px;
+    line-height: 0px;
+    padding-top: 20px;
 }
 
 .box > img {
