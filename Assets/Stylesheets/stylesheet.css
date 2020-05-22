@@ -495,7 +495,9 @@ body.login header {
 }
 
 body.login main {
+    width: 1020px;
     padding: 0 80px;
+    margin: auto;
     margin-top: -40px;
 }
 
