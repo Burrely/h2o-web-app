@@ -121,6 +121,7 @@ main > * {
     color: var(--secondary-color-dark); 
     margin-top: 30px;
     width: 1480px;
+    height: 700px;
     margin-left: 20px;
 }
 .instellingen h5{
@@ -136,7 +137,7 @@ main > * {
     width: 60px;
     margin-bottom: 10px;
     display: flex;
-    float: right;
+    margin-top: 10px;
 }
 .dropDown{
     border: solid black;
@@ -151,7 +152,16 @@ main > * {
 .instellingen > div{
     border: 1px solid var(--secondary-color);
     width: 300px;
+    display: inline-grid;
+    margin-right: 20px;
+    margin-bottom: 20px;
 }
 .bigBox{
     width: 100% !important;
+    margin: 0;
+}
+.instellingen div div{
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
 }
