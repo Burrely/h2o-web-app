@@ -408,8 +408,12 @@ main.overview section.miniOverview section > img {
     margin: auto;
     height: 90%;
 }
-.notification{
+
+.notification {
     border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin: 0px;
+    height: 100%;
 }
 .filter div{
     border: 1px solid var(--secondary-color);
@@ -420,10 +424,8 @@ main.overview section.miniOverview section > img {
 }
 .filter * {
     float: left;
-    cursor: pointer;
     width: 25%;
-
-    
+    cursor: pointer;
 }
 .filter div:hover{
     background-color: var(--secondary-color-dark);
@@ -442,7 +444,27 @@ main.overview section.miniOverview section > img {
     margin: 0;
 }
 
-.weekOverzicht > h1 {
+.notificationBox {
+    margin-top: 100px;
+}
+
+.notificationBox > .box {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin: 0px 20px 20px 20px;
+    height: 140px;
+}
+
+.box > img {
+    float: left;
+}
+
+.box > img, h1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+.weekOverzicht > h1, h5 {
     margin: 0;
     margin-left: 10px;
     line-height: 15px;
