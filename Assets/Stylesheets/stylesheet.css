@@ -464,3 +464,35 @@ p.futureDay {
    color: var(--primary-color);
    border-bottom: 0px solid var(--secondary-color);
 }
+header div{
+    background-color: var(--secondary-color);
+    color: var(--primary-color-dark);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+header div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header img{
+    opacity: 2;
+}
+.contentLogin div{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark);
+    width: 50%;
+    margin-bottom: 10px;
+}
+.inlog{
+    background-color: var(--secondary-color-dark);
+    color: white !important;
+    margin-top: 40px;
+}
+.contentlogin * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
