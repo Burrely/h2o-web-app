@@ -2,9 +2,10 @@
 
 :root {
     --primary-color: #f58118bf;
-    --primary-color-dark: #FF3400;
+    --primary-color-dark: #f58118;
     --secondary-color: #50C5D2;
     --secondary-color-dark: #048a96;
+    --tertiary-color: #FF3400;
     --tint: #eeeeee;
     --tint-dark: #707070;
     --background: white;
@@ -42,6 +43,10 @@ a {
     color: var(--secondary-color-dark) !important ;
 }
 
+.tertiary-color {
+    color: var(--tertiary-color) !important ;
+}
+
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
@@ -51,7 +56,7 @@ main {
     flex-wrap: wrap;
     width: 1560px;
     margin-left: 260px;
-    padding: 20px 80px;
+    padding: 20px 80px 10px 80px;
 }
 
 main > * {
@@ -168,7 +173,7 @@ main > * {
     width: 100%;
     margin: 0;
     background-color: #eeeeee;
-    color: red;
+    color: var(--tertiary-color);
     text-align: left;
     border-radius: 10px;
 }
@@ -324,16 +329,16 @@ main > section > .headingContainer {
 }
 
 main.overview section.chart > img {
-    width: calc(100% + 82px);
+    width: calc(100% + 76px);
     margin-top: -20px;
-    margin-left: -81px;
+    margin-left: -72px;
     height: 440px;
 }
 
 main.overview section.miniOverview section > img {
     margin-top: -14px;
-    margin-left: -77px;
-    height: 302px;
+    margin-left: -88px;
+    width: calc(100% + 111px);
 }
 
 /* Progress */
@@ -407,6 +412,30 @@ main.overview section.miniOverview section > img {
     display: block;
     margin: auto;
     height: 90%;
+}
+.notification{
+    border: 1px solid var(--secondary-color);
+}
+.filter div{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark);
+}
+.filter * {
+    float: left;
+    cursor: pointer;
+    width: 25%;
+    
+}
+.filter div:hover{
+    background-color: var(--secondary-color-dark);
+    color: white;
+}
+.filter div:active{
+    background-color: var(--secondary-color);
+}
+.filter div > h3 {
+    display: flex;
+    margin-left: 20px;
 }
 
 .weekOverzicht {
