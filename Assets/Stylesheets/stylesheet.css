@@ -415,6 +415,7 @@ main.overview section.miniOverview section > img {
     margin: 0px;
     height: 100%;
 }
+
 .filter div{
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color-dark);
@@ -422,6 +423,7 @@ main.overview section.miniOverview section > img {
     align-items: center;
     justify-content: center;
 }
+
 .filter * {
     float: left;
     width: 25%;
@@ -429,14 +431,16 @@ main.overview section.miniOverview section > img {
 }
 .filter div:hover{
     background-color: var(--secondary-color-dark);
-    color: white;
+    color: 
+    white;
 }
 .filter div:active{
     background-color: var(--secondary-color);
 }
-.filter div > h3 {
-    display: flex;
 
+.filter div > h3 {
+    width: 100%;
+    text-align: center;
 }
 
 .weekOverzicht {
