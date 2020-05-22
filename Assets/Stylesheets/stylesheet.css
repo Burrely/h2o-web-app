@@ -691,3 +691,52 @@ div.active:hover {
     color: var(--background);
     cursor: default;
 }
+.instellingen {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark); 
+    margin-top: 30px;
+    width: 1480px;
+    height: 700px;
+    margin-left: 20px;
+}
+.instellingen h5{
+    color: var(--primary-color);
+    margin: 0;
+}
+.instellingen h3{
+    margin: 0;
+}
+.instellingenDropdown{
+    border: 1px solid var(--secondary-color);
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+    display: flex;
+    margin-top: 10px;
+}
+.dropDown{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 5px;
+    margin-bottom: 2px;
+
+}
+.instellingen > div{
+    border: 1px solid var(--secondary-color);
+    width: 300px;
+    display: inline-grid;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.bigBox{
+    width: 100% !important;
+    margin: 0;
+}
+.instellingen div div{
+    display: flex;
+    justify-content: center;
+    margin-left: 40%;
+}
