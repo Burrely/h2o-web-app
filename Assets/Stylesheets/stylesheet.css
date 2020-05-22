@@ -116,3 +116,28 @@ main > * {
 .sidebar > nav > *:last-child {
     border-bottom: none;
 }
+.instellingen {
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark); 
+    margin-top: 30px;
+    width: 1480px;
+    margin-left: 20px;
+}
+.instellingen h5{
+    color: var(--primary-color);
+}
+.instellingenDropdown{
+    border: 1px solid var(--secondary-color);
+    height: 60px;
+    width: 60px;
+}
+.dropDown{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    margin-left: 5px;
+    margin-bottom: 2px;
+
+}
