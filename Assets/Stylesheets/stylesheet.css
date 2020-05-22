@@ -51,7 +51,7 @@ main {
     flex-wrap: wrap;
     width: 1560px;
     margin-left: 260px;
-    padding: 20px 80px;
+    padding: 20px 80px 10px 80px;
 }
 
 main > * {
@@ -324,16 +324,16 @@ main > section > .headingContainer {
 }
 
 main.overview section.chart > img {
-    width: calc(100% + 82px);
+    width: calc(100% + 76px);
     margin-top: -20px;
-    margin-left: -81px;
+    margin-left: -72px;
     height: 440px;
 }
 
 main.overview section.miniOverview section > img {
     margin-top: -14px;
-    margin-left: -77px;
-    height: 302px;
+    margin-left: -88px;
+    width: calc(100% + 111px);
 }
 
 /* Progress */
