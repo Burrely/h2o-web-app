@@ -693,26 +693,25 @@ div.active:hover {
 }
 .instellingen {
     border: 1px solid var(--secondary-color);
+    border-radius: 10px;
     color: var(--secondary-color-dark); 
-    margin-top: 30px;
-    width: 1480px;
-    height: 700px;
+    margin-top: 50px;
+    width: 1280px;
+    height: 800px;
     margin-left: 20px;
+    margin-right: 200px;
+    display: inline-block;
+    overflow: hidden;
 }
 .instellingen h5{
     color: var(--primary-color);
     margin: 0;
+    margin-left: 20px;
+    margin-bottom: 20px;
 }
 .instellingen h3{
     margin: 0;
-}
-.instellingenDropdown{
-    border: 1px solid var(--secondary-color);
-    height: 60px;
-    width: 60px;
-    margin-bottom: 10px;
-    display: flex;
-    margin-top: 10px;
+    margin-left: 20px;
 }
 .dropDown{
     border: solid black;
@@ -722,12 +721,14 @@ div.active:hover {
     transform: rotate(45deg);
     margin-left: 5px;
     margin-bottom: 2px;
+    margin-right: 10px;
 
 }
-.instellingen > div{
+.instellingen .topContent{
     border: 1px solid var(--secondary-color);
+    border-radius: 10px;
     width: 300px;
-    display: inline-grid;
+    display: inline-block;
     margin-right: 20px;
     margin-bottom: 20px;
 }
@@ -735,8 +736,62 @@ div.active:hover {
     width: 100% !important;
     margin: 0;
 }
-.instellingen div div{
+.instellingen h1{
+    padding-left: 20px;
     display: flex;
+    
+}
+.topContent div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#buttonAan{
+    background-color: var(--secondary-color-dark);
+    color: white;
+
+}
+.instellingenDropdown{
+    border: 1px solid var(--secondary-color);
+    height: 30px;
+    width: 120px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+#buttonAan i{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+}
+.botContent{
+    margin-bottom: 20px;
+    margin-top: 330px;
+}
+.botContent div{
+    border: 1px solid var(--secondary-color);
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin-left: 40%;
+
+}
+.botContent i{
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+#privacy {
+    width: 600px;
+}
+#boompje {
+    display: inline-block;
+    margin-right: 645px;
+}
+.topContent h3, h5 {
+    display: flex; 
+    
 }
