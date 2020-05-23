@@ -121,7 +121,7 @@ main > * {
     color: var(--secondary-color-dark); 
     margin-top: 30px;
     width: 1480px;
-    height: 700px;
+    height: auto;
     margin-left: 20px;
     display: inline-block;
 }
@@ -149,7 +149,7 @@ main > * {
     margin-bottom: 2px;
 
 }
-.instellingen > div{
+.instellingen .topContent{
     border: 1px solid var(--secondary-color);
     width: 300px;
     display: inline-block;
@@ -177,4 +177,12 @@ main > * {
 #buttonAan i{
     border: solid white;
     border-width: 0 3px 3px 0;
+}
+.botContent{
+    border: 1px solid var(--secondary-color);
+}
+.botContent i{
+    float: right;
+    margin-right: 20px;
+    margin-top: 5px;
 }
