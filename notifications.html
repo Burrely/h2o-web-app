@@ -11,6 +11,7 @@
         <link rel="icon" href="Assets/Graphics/H₂O logo_16x16.png" sizes="16x16" type="image/png">
         <link rel="icon" href="Assets/Graphics/H₂O logo_32x32.png" sizes="32x32" type="image/png">
         <link rel="icon" href="Assets/Graphics/H₂O logo_64x64.png" sizes="64x64" type="image/png">
+        <script src="Assets/Scripts/filter.js"></script>
     </head>
     <body>
         <div class="sidebar">
@@ -44,7 +45,97 @@
             </nav>
         </div>
         <main>
-            <h1>Notificaties</h1>
+            <section class="notifications">
+                <div class="content">
+                <img class="notificationImage" src="https://pngimage.net/wp-content/uploads/2018/06/uitroepteken-png-3.png">  
+                <h2 class="notificationText">Er is een lek gevonden!</h2>
+                </div>
+            </section>
+            <section class="notification">
+                <h1>Notificaties</h1>
+                <section class="filter">
+                    <div onclick="switchFilter(this.id)" class="filterBtn active" id="alles">
+                        <h3>Alles</h3>
+                    </div>
+                    <div onclick="switchFilter(this.id)" class="filterBtn" id="mijlpaal">
+                        <h3>Mijlpalen</h3>
+                    </div>
+                    <div onclick="switchFilter(this.id)" class="filterBtn" id="lekmelding">
+                        <h3>Lekmeldingen</h3>
+                    </div>
+                    <div onclick="switchFilter(this.id)" class="filterBtn" id="tips">
+                        <h3>Tips</h3>
+                    </div>
+                </section>
+                <section class="notificationBox">
+                    <div class="box mijlpaal">
+                        <img src="Assets/Graphics/IconPrestaties.png"/>
+                        <h1>Prestatie behaald</h1>
+                        <h5>mijlpaal</h5>
+                    </div>
+                    <div class="box tips">
+                        <img src="Assets/Graphics/IconTips.png"/>
+                        <h1>Waterbesparing</h1>
+                        <h5>tip</h5>
+                    </div>
+                    <div class="box tips">
+                        <img src="Assets/Graphics/IconTips.png"/>
+                        <h1>Waterbesparing</h1>
+                        <h5>tip</h5>
+                    </div>
+                    <div class="box lekmelding">
+                        <img src="Assets/Graphics/IconLekmeldingen.png"/>
+                        <h1>Lekkage gedetecteerd</h1>
+                        <h5>Lekmelding</h5>
+                    </div>
+                    <div class="box mijlpaal">
+                        <img src="Assets/Graphics/IconPrestaties.png"/>
+                        <h1>Prestatie behaald</h1>
+                        <h5>mijlpaal</h5>
+                    </div>
+                    <div class="box lekmelding">
+                        <img src="Assets/Graphics/IconLekmeldingen.png"/>
+                        <h1>Lekkage gedetecteerd</h1>
+                        <h5>Lekmelding</h5>
+                    </div>
+                    <div class="box tips">
+                        <img src="Assets/Graphics/IconTips.png"/>
+                        <h1>Waterbesparing</h1>
+                        <h5>tip</h5>
+                    </div>
+                    <div class="box mijlpaal">
+                        <img src="Assets/Graphics/IconPrestaties.png"/>
+                        <h1>Prestatie behaald</h1>
+                        <h5>mijlpaal</h5>
+                    </div>
+                    <div class="box mijlpaal">
+                        <img src="Assets/Graphics/IconPrestaties.png"/>
+                        <h1>Prestatie behaald</h1>
+                        <h5>mijlpaal</h5>
+                    </div>
+                    <div class="box tips">
+                        <img src="Assets/Graphics/IconTips.png"/>
+                        <h1>Waterbesparing</h1>
+                        <h5>tip</h5>
+                    </div>
+                    <div class="box lekmelding">
+                        <img src="Assets/Graphics/IconLekmeldingen.png"/>
+                        <h1>Lekkage gedetecteerd</h1>
+                        <h5>Lekmelding</h5>
+                    </div>
+                    <div class="box mijlpaal">
+                        <img src="Assets/Graphics/IconPrestaties.png"/>
+                        <h1>Prestatie behaald</h1>
+                        <h5>mijlpaal</h5>
+                    </div>
+                    
+                    <div class="box lekmelding">
+                        <img src="Assets/Graphics/IconLekmeldingen.png"/>
+                        <h1>Lekkage gedetecteerd</h1>
+                        <h5>Lekmelding</h5>
+                    </div>
+                </section>
+            </section>
         </main>
     </body>
 </html>

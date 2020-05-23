@@ -1,12 +1,14 @@
 /* Main styling */
 
 :root {
-    --primary-color: #fbac18;
+    --primary-color: #f58118bf;
     --primary-color-dark: #f58118;
     --secondary-color: #50C5D2;
     --secondary-color-dark: #048a96;
+    --tertiary-color: #FF3400;
     --tint: #eeeeee;
     --tint-dark: #707070;
+    --tint-darker: #606060;
     --background: white;
 }
 
@@ -30,22 +32,63 @@ a {
     text-decoration: none;
 }
 
+.primary-color {
+    color: var(--primary-color) !important ;
+}
+
+.primary-color-dark {
+    color: var(--primary-color-dark) !important;
+}
+
+.secondary-color-dark {
+    color: var(--secondary-color-dark) !important ;
+}
+
+.tertiary-color {
+    color: var(--tertiary-color) !important ;
+}
+
 /* PAGE SECTIONS - (exists out of multiple sub-sections.)*/
 
 main {
-    margin-left: 200px;
-    overflow: auto;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1560px;
+    margin-left: 260px;
+    padding: 20px 80px 10px 80px;
 }
 
 main > * {
-    display: inline-block;
+    width: 1400px;
+    margin-bottom: 40px;
+}
+
+/* Chart section */
+
+.chart {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: auto;
+}
+
+.chart > img {
+    width: 100%;
+    height: 400px;
+}
+
+.chart > h1 {
+    font-size: 18.72px;
+    padding: 10px 20px;
+    color: var(--primary-color-dark);
+    margin: 0;
 }
 
 /* Sidebar */
 
 .sidebar {
-    position: absolute;
+    position: fixed;
     width: 260px;
     height: 100vh;
     padding: 10px;
@@ -54,7 +97,7 @@ main > * {
 
 .sidebar > * {
     border-radius: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 14px;
     padding: 10px;
     background-color: var(--background);
 }
@@ -105,16 +148,548 @@ main > * {
     color: var(--primary-color-dark);
 }
 
+.sidebar > nav > *:first-child {
+    padding-top: 10px;
+}
+
 .sidebar > nav > * {
     display: flex;
     align-items: center;
     margin: 0;
-    padding: 10px 0;
+    padding: 18px 0;
     border-bottom: 1px solid var(--tint);
 }
 
 .sidebar > nav > *:last-child {
+    padding-bottom: 10px;
     border-bottom: none;
+}
+
+.notifications {
+    height: 60px;
+}
+
+.notifications * {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    background-color: #eeeeee;
+    color: var(--tertiary-color);
+    text-align: left;
+    border-radius: 10px;
+}
+
+.notifications > div {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.notifications img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+/* PAGES */
+
+/* Overzicht */
+
+    main section.miniOverview {
+        display: grid;
+    }
+
+    main.home section.miniOverview {
+        height: 200px;
+        grid-template-columns: 50% 16.66% 33.33%;
+    }
+
+    main section.miniOverview > * {
+        height: 100%;
+        margin-right: 10px;
+        padding: 10px 20px;
+        border: 1px solid var(--secondary-color);
+        border-radius: 10px;
+        color: var(--primary-color-dark);
+    }
+
+    main section.miniOverview > section.voortgang > img {
+        display: block;
+        height: 110px;
+        margin: auto;
+    }
+
+    main section.miniOverview section > * {
+        margin: 0;
+    }
+
+    main section.miniOverview > *:last-child {
+        margin-right: 0;
+    }
+
+    main section.miniOverview > * > h1 {
+        margin-bottom: -4px;
+    }
+
+        main section.miniOverview > * > h5 {
+            margin-bottom: 20px;
+        }
+
+            main section.miniOverview > * > .shortList {
+                display: flex;
+                flex-direction: row;
+                align-items: baseline;
+            }
+
+            main section.miniOverview > * > .shortList h1 {
+                display: block;
+                margin-right: 10px;
+                line-height: 0;
+                font-size: 36pt;
+            }
+
+            main section.miniOverview > * > .shortList > * {
+                display: flex;
+                align-items: center;
+                width: 50%;
+                margin-right: 20px;
+                color: var(--secondary-color-dark);
+            }
+
+            main section.miniOverview > * > .shortList > * > div.graphic {
+                width: 64px;
+                height: 64px;
+                margin-right: 10px;
+            }
+
+            main section.miniOverview > * > .shortList > * > div.graphic.unclaimedTrophy {
+                background-image: url("../Graphics/unclaimed_trophy.png");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            main section.miniOverview > * > .shortList > * * {
+                margin: 0;
+            }
+
+    div.imagealign {
+        text-align: center;
+    }
+
+    .voortgang > div > img {
+        width: 100%;
+    }
+
+    /* .huidigVerbruik > div {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 20px 50px;
+    } */
+
+    
+/* 
+    div.square {
+        height: 20px;
+        width: 20px;
+        
+    }
+
+    div#red {
+        background-color: red;
+    } */
+
+
+
+/* Waterverbruik */
+
+main.overview section.miniOverview {
+    height: 280px;
+    grid-template-columns: 60% 20% 20%;
+}
+
+main > section > .headingContainer {
+    padding: 10px 20px;
+}
+
+.headingContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+}
+
+.headingContainer > * {
+    margin: 0;
+}
+
+.headingContainer .navigation {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.headingContainer .navigation > * {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    margin: 0;
+    margin-right: 20px;
+}
+
+main.overview section.chart > img {
+    width: calc(100% + 76px);
+    margin-top: -20px;
+    margin-left: -72px;
+    height: 440px;
+}
+
+main.overview section.miniOverview section > img {
+    margin-top: -14px;
+    margin-left: -88px;
+    width: calc(100% + 111px);
+}
+
+/* Progress */
+.buttonImage{
+    height: 50px;
+    width: 50px;
+    border-color: #50C5D2;
+    border-radius: 50%;
+}
+.buttonSectie h3{
+    color: #50C5D2;
+    margin-left: 5px;
+} 
+.buttonSectie h5{
+    color: #f58118;
+    margin-left: 5px;
+}
+.buttonSectie *{
+    display: inline-block;
+}
+.buttonSectie button{
+    border-radius: 50%;
+    background-color: white;
+
+}
+.buttonSectie > div div > *{
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 2px;
+}
+.buttonSectie > div div > h3{
+    padding-bottom: 3px;
+    vertical-align: middle;
+}
+.buttonSectie > div div > h5{
+    vertical-align: middle;
+}
+.buttonSectie > div{
+    margin-left: 30px;
+    margin-right: 50px;
+}
+.boomOverzicht {
+    display: flex;
+}
+
+.boom {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    height: 680px;
+    width: 40%;
+}
+
+.boomOverzicht > * > h1 {
+    color: var(--secondary-color-dark);
+    font-size: 18.72px;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.boomOverzicht > .boom > h1 {
+    padding-left: 10px;
+}
+
+.weekOverzicht > h1 > span {
+    color: var(--primary-color);
+    font-size: 15px;
+}
+
+.boom > img {
+    display: block;
+    margin: auto;
+    height: 90%;
+}
+
+.notification {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin: 0px;
+    height: 100%;
+}
+
+.filter div{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter * {
+    float: left;
+    width: 25%;
+    cursor: pointer;
+}
+.filter div:hover{
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+    color: white;
+}
+
+.filter div > h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.weekOverzicht {
+    height: 100%;
+    margin: 0;
+}
+
+.notificationBox {
+    padding-top: 20px;
+    margin-top: 87px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 672px;
+}
+
+.notificationBox::-webkit-scrollbar {
+    width: 20px;
+}
+
+.notificationBox::-webkit-scrollbar-track {
+    background-color: var(--tint);
+    border-radius: 10px;
+}
+
+.notificationBox::-webkit-scrollbar-thumb {
+    background: var(--tint-dark);
+    border-radius: 10px;
+}
+
+.notificationBox::-webkit-scrollbar-thumb:hover {
+    background: var(--tint-darker);
+}
+
+.notificationBox::-webkit-scrollbar-corner { 
+    border-radius: 12px;
+}
+
+.notificationBox > .box {
+    border: 1px solid var(--secondary-color);
+    border-radius: 10px;
+    margin: 0px 20px 20px 20px;
+    height: 140px;
+}
+
+.box > img {
+    float: left;
+}
+
+.notification > h1 {
+    color: var(--secondary-color-dark);
+    padding-left: 10px;
+}
+
+.box > h1 {
+    color: var(--secondary-color-dark);
+}
+
+.box > h5 {
+    color: var(--primary-color);
+}
+
+.box > h1, h5 {
+    margin: 0;
+    margin-left: 10px;
+    line-height: 0px;
+    padding-top: 20px;
+}
+
+.box > img {
+    padding: 10px 20px;
+}
+
+.weekOverzicht > p {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    border-bottom: 1px solid var(--secondary-color);
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0px;
+    margin-top: 15px;
+    padding-left: 10px;
+    color: var(--primary-color-dark);
+}
+
+p > span {
+    color: var(--tint-dark);
+}
+
+p.futureDay {
+   color: var(--primary-color);
+   border-bottom: 0px solid var(--secondary-color);
+}
+header div{
+    background-color: var(--secondary-color);
+    color: var(--primary-color-dark);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 30px;
+}
+header div{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+header img{
+    opacity: 2;
+}
+
+/* Log in */
+
+body.login header {
+    display: block;
+    width: 100%;
+    height: 280px;
+    background-color: var(--tint);
+}
+
+body.login main {
+    width: 1020px;
+    padding: 0 80px;
+    margin: auto;
+    margin-top: -40px;
+}
+
+body.login main > section {
+    padding: 40px;
+    border: 1px solid var(--secondary-color-dark);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.70);
+}
+
+    /* Logo */
+    body.login main > section div.logoContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -168px;
+        margin-bottom: 40px;
+    }
+
+    body.login main > section div.logoContainer img {
+        margin-right: 24px;
+    }
+
+    body.login main > section div.logoContainer h1:first-child {
+        color: var(--secondary-color-dark);
+    }
+
+    body.login main > section div.logoContainer h1 {
+        margin: 0;
+        font-size: 34pt;
+        color: var(--tint-dark);
+    }
+
+    /*Form*/
+    body.login main > section section.form > * {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 40px;
+        margin-bottom: 10px;
+        border: 1px solid var(--secondary-color);
+        background-color: #fbfbfb;
+        color: var(--secondary-color-dark);
+        font-weight: 500;
+    }
+
+    body.login main > section section.form > *.loginButton {
+        margin-top: 20px;
+        color: var(--tint);
+        border-color: var(--secondary-color-dark);
+        background-color: var(--secondary-color-dark);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contentLogin div{
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color-dark);
+    width: 50%;
+    margin-bottom: 10px;
+    width: 400px;
+}
+.inlog{
+    background-color: var(--secondary-color-dark);
+    margin-top: 40px;
+    text-decoration: none;
+}
+.inlog a{
+    color: white;
+}
+.inlogMain{
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+
+div.active {
+    background-color: var(--secondary-color-dark);
+    border-color: var(--secondary-color-dark);
+    color: var(--background);
+}
+div.active > h3:hover {
+    cursor: default;
+}
+
+div.active:hover {
+    background-color: var(--secondary-color-dark);
+    border-color: var(--secondary-color-dark);
+    color: var(--background);
+    cursor: default;
 }
 .instellingen {
     border: 1px solid var(--secondary-color);
