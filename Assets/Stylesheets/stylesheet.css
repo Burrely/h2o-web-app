@@ -118,6 +118,7 @@ main > * {
 }
 .instellingen {
     border: 1px solid var(--secondary-color);
+    border-radius: 10px;
     color: var(--secondary-color-dark); 
     margin-top: 50px;
     width: 1280px;
@@ -150,6 +151,7 @@ main > * {
 }
 .instellingen .topContent{
     border: 1px solid var(--secondary-color);
+    border-radius: 10px;
     width: 300px;
     display: inline-block;
     margin-right: 20px;
