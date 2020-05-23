@@ -625,32 +625,6 @@ body.login main > section {
         background-color: var(--secondary-color-dark);
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contentLogin div{
     border: 1px solid var(--secondary-color);
     color: var(--secondary-color-dark);
@@ -674,8 +648,6 @@ body.login main > section {
     text-align: center;
     width: 100%;
 }
-
-
 div.active {
     background-color: var(--secondary-color-dark);
     border-color: var(--secondary-color-dark);
@@ -706,8 +678,10 @@ div.active:hover {
 .instellingen h5{
     color: var(--primary-color);
     margin: 0;
+    padding: 0;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+
 }
 .instellingen h3{
     margin: 0;
@@ -768,7 +742,7 @@ div.active:hover {
 }
 .botContent{
     margin-bottom: 20px;
-    margin-top: 330px;
+    margin-top: 350px;
 }
 .botContent div{
     border: 1px solid var(--secondary-color);
