@@ -169,3 +169,12 @@ main > * {
     padding-left: 20px;
     display: inline-block;
 }
+#buttonAan{
+    background-color: var(--secondary-color-dark);
+    color: white;
+
+}
+#buttonAan i{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+}
